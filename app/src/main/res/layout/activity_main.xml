@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <Space android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dd_logo"
+        android:layout_gravity="center"
+        android:paddingTop="50dp"/>
+<!--        android:layout_marginHorizontal="150dp"-->
+<!--        android:layout_marginVertical="100dp"/>-->
+
+    <Space android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/text"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+    <EditText
+        android:id="@+id/textbox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="add new food..."/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="ADD FOOD"
+        android:layout_gravity="center"
+        android:onClick="addMenu"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btnRandom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="changeMenu"
+        android:text="DECIDE"/>
+</LinearLayout>
